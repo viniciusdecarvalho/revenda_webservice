@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+	
+<!-- 		<property name="hibernate.format_sql">true</property> -->
+<!-- 		<property name="hibernate.hbm2ddl.auto">create-drop</property> -->
+<!--  		<property name="hibernate.dialect">org.hibernate.dialect.HSQLDialect</property> -->
+<!-- 		<property name="hibernate.connection.url">jdbc:hsqldb:file:revendaDB.db</property> -->
+<!-- 		<property name="hibernate.connection.driver_class">org.hsqldb.jdbcDriver</property> -->
+<!-- 		<property name="hibernate.connection.username">sa</property> -->
+<!-- 		<property name="hibernate.connection.password"></property> -->
+	
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.hbm2ddl.auto">none</property>
+ 		<property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/ads_revenda_db</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">stitecnologia</property>
+	
+		<mapping class="br.edu.ftlf.ads.revenda.model.Model" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Aquisicao" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.AquisicaoPagamento" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Cliente" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Contato" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Endereco" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.FormaPagamento" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Fornecedor" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Funcionario" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Usuario" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Gasto" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Pagamento" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Veiculo" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.Venda" />
+		<mapping class="br.edu.ftlf.ads.revenda.model.VendaPagamento" />
+		
+	</session-factory>
+	
+</hibernate-configuration>

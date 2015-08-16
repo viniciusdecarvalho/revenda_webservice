@@ -1,0 +1,28 @@
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
+	
+	<!--
+	 
+	<endpoint name="funcionarios"
+		implementation="br.edu.ftlf.ads.revenda.webservice.impl.FuncionariosServicesImpl" 
+		url-pattern="/funcionarios" />
+			  	
+	<endpoint name="clientes"
+		implementation="br.edu.ftlf.ads.revenda.webservice.impl.ClientesServicesImpl" 
+		url-pattern="/clientes" />
+	
+	<endpoint name="fornecedores"
+		implementation="br.edu.ftlf.ads.revenda.webservice.impl.FornecedoresServicesImpl" 
+		url-pattern="/fornecedores" />
+			 
+	<endpoint name="veiculos"
+		implementation="br.edu.ftlf.ads.revenda.webservice.impl.VeiculosServicesImpl" 
+		url-pattern="/veiculos" />
+		
+	 --> 
+	 
+	 
+ 	<endpoint name="revenda"
+		implementation="br.edu.ftlf.ads.revenda.webservice.impl.RevendaServicesFacade" 
+		url-pattern="/" />
+	 
+</endpoints>
